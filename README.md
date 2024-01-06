@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+````markdown
+# Приложение для изучения иностранных слов
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Установка React
 
-## Available Scripts
+1. Установите Node.js, если его еще нет: [Node.js](https://nodejs.org/)
 
-In the project directory, you can run:
+2. Создайте новый проект React:
 
-### `npm start`
+   ```bash
+   npx create-react-app my-language-app
+   ```
+````
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Перейдите в директорию проекта:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   cd my-language-app
+   ```
 
-### `npm test`
+4. Запустите приложение:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+## Добавление компонентов и структуры
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Создайте компонент для карточек слов:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   touch src/components/WordCard.js
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Добавьте компоненту базовую структуру React.
 
-### `npm run eject`
+3. Создайте компонент для тестов:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   touch src/components/Quiz.js
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Добавьте компоненту базовую структуру React.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Установка Redux
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Установите Redux и react-redux:
 
-## Learn More
+   ```bash
+   npm install redux react-redux
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Создайте директорию для хранения Redux-связанных файлов:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   mkdir src/redux
+   ```
 
-### Code Splitting
+3. В директории `src/redux` создайте файлы: `actions.js`, `reducers.js`, `store.js`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Определите экшены, редукторы и создайте хранилище.
 
-### Analyzing the Bundle Size
+## Навигация между страницами
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Установите React Router:
 
-### Making a Progressive Web App
+   ```bash
+   npm install react-router-dom
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. В файле `src/App.js` добавьте маршрутизацию для основных страниц.
 
-### Advanced Configuration
+## Взаимодействие с сервером
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Установите Axios:
 
-### Deployment
+   ```bash
+   npm install axios
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. Создайте файл `api.js` для взаимодействия с сервером.
 
-### `npm run build` fails to minify
+3. Реализуйте запросы для получения слов и тестов.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Стилизация с Styled-components
+
+1. Установите Styled-components:
+
+   ```bash
+   npm install styled-components
+   ```
+
+2. Используйте Styled-components для стилизации ваших компонентов.
+
+## Тестирование с Jest и React Testing Library
+
+1. Создайте тесты для компонентов и функциональности:
+
+   ```bash
+   npm test
+   ```
+
+## Запуск приложения
+
+1. Запустите ваше React-приложение:
+
+   ```bash
+   npm start
+   ```
+
+2. Откройте браузер и перейдите по адресу [http://localhost:3000/](http://localhost:3000/).
+
+3. Наслаждайтесь изучением иностранных слов!
+
+```
+
+Обратите внимание, что это всего лишь общая последовательность, и в зависимости от вашего проекта вы можете добавить или изменить шаги.
+```
